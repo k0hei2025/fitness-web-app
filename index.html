@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitPlan — Weekly Workout & Diet Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Hero / Header -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="logo">Fit<span class="logo-accent">Plan</span></h1>
+      <p class="tagline">Your Weekly Workout Blueprint</p>
+      <div class="streak-badge" id="streakBadge" title="Click to log today's workout">
+        <span class="streak-flame">&#128293;</span>
+        <span class="streak-count" id="streakCount">0</span>
+        <span class="streak-label">day streak</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Day Navigation -->
+  <nav class="day-nav" id="dayNav">
+    <button class="day-tab active" data-day="tuesday">
+      <span class="day-dot dot-red"></span>
+      <span class="day-name">Tuesday</span>
+      <span class="day-focus">Chest + Triceps</span>
+    </button>
+    <button class="day-tab" data-day="thursday">
+      <span class="day-dot dot-purple"></span>
+      <span class="day-name">Thursday</span>
+      <span class="day-focus">Shoulders + Biceps</span>
+    </button>
+    <button class="day-tab" data-day="saturday">
+      <span class="day-dot dot-green"></span>
+      <span class="day-name">Saturday</span>
+      <span class="day-focus">Legs + Hip Power</span>
+    </button>
+    <button class="day-tab" data-day="sunday">
+      <span class="day-dot dot-blue"></span>
+      <span class="day-name">Sunday</span>
+      <span class="day-focus">Back + Triceps</span>
+    </button>
+    <button class="day-tab" data-day="meals">
+      <span class="day-dot dot-orange"></span>
+      <span class="day-name">Meals</span>
+      <span class="day-focus">Weekly Diet</span>
+    </button>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <!-- TUESDAY -->
+    <section class="day-section active" id="day-tuesday" data-color="red">
+      <div class="day-header day-header-red">
+        <div class="day-header-content">
+          <span class="day-badge">TUESDAY</span>
+          <h2>Chest + Triceps</h2>
+          <p class="day-subtitle">Push Day — Build upper body pressing power</p>
+        </div>
+        <div class="muscle-icon">&#128170;</div>
+      </div>
+      <div class="exercise-grid">
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/barbell-bench-press-resized.png" alt="Barbell Bench Press" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Bench Press</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Chest, Triceps, Shoulders</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/11/Incline-barbell-bench-press.png" alt="Incline Barbell Press" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Incline Barbell Press</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Upper Chest, Shoulders</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/11/cable-crossover-resized.png" alt="Cable Crossover Fly" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Cable Crossover Fly</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Inner Chest</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/11/Decline-barbell-bench-press.png" alt="Decline Bench Press" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Decline Bench Press</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Lower Chest, Triceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/triceps-pushdown-rope-attachment-resized.png" alt="Rope Tricep Pushdown" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Rope Tricep Pushdown</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Triceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/EZ-bar-skull-crusher-resized.png" alt="Skull Crushers" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Skull Crushers</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Triceps</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THURSDAY -->
+    <section class="day-section" id="day-thursday" data-color="purple">
+      <div class="day-header day-header-purple">
+        <div class="day-header-content">
+          <span class="day-badge">THURSDAY</span>
+          <h2>Shoulders + Biceps</h2>
+          <p class="day-subtitle">Press & Curl Day — Sculpt boulders and peaks</p>
+        </div>
+        <div class="muscle-icon">&#128170;</div>
+      </div>
+      <div class="exercise-grid">
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/barbell-standing-military-press-resized.png" alt="Barbell Overhead Press" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Overhead Press</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Shoulders, Triceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-lateral-raise-resized.png" alt="Dumbbell Lateral Raise" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Dumbbell Lateral Raise</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Side Delts</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-front-raise-resized.png" alt="Dumbbell Front Raise" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Dumbbell Front Raise</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Front Delts</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/11/cable-face-pull-resized.png" alt="Cable Face Pull" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Cable Face Pull</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Rear Delts, Rotator Cuff</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/barbell-curl-resized.png" alt="Barbell Bicep Curl" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Bicep Curl</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Biceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-hammer-curl-resized.png" alt="Hammer Curl" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Hammer Curl</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Biceps, Brachialis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SATURDAY -->
+    <section class="day-section" id="day-saturday" data-color="green">
+      <div class="day-header day-header-green">
+        <div class="day-header-content">
+          <span class="day-badge">SATURDAY</span>
+          <h2>Legs + Hip Power</h2>
+          <p class="day-subtitle">Lower Body Day — Build a strong foundation</p>
+        </div>
+        <div class="muscle-icon">&#129461;</div>
+      </div>
+      <div class="exercise-grid">
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/barbell-squat-resized.png" alt="Barbell Back Squat" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Back Squat</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Quads, Glutes, Core</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/leg-press-resized.png" alt="45 Degree Leg Press" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>45&deg; Leg Press</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Quads, Glutes</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/romanian-deadlift-resized.png" alt="Romanian Deadlift" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Romanian Deadlift</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Hamstrings, Glutes</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/lying-leg-curl-resized.png" alt="Leg Curl Machine" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Leg Curl Machine</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Hamstrings</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/leg-extension-resized.png" alt="Leg Extension" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Leg Extension</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Quads</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/11/hip-abduction-machine-resized.png" alt="Hip Abduction Machine" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Hip Abduction Machine</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Hip Abductors, Glutes</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2018/05/barbell-hip-thrust-resized.png" alt="Barbell Hip Thrust" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Hip Thrust</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Glutes, Hamstrings</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/standing-calf-raise-resized.png" alt="Standing Calf Raise" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Standing Calf Raise</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Calves</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUNDAY -->
+    <section class="day-section" id="day-sunday" data-color="blue">
+      <div class="day-header day-header-blue">
+        <div class="day-header-content">
+          <span class="day-badge">SUNDAY</span>
+          <h2>Back + Triceps</h2>
+          <p class="day-subtitle">Pull Day — Develop a powerful posterior chain</p>
+        </div>
+        <div class="muscle-icon">&#129470;</div>
+      </div>
+      <div class="exercise-grid">
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/barbell-deadlift-resized.png" alt="Barbell Deadlift" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Deadlift</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Back, Glutes, Hamstrings</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/barbell-bent-over-row-resized.png" alt="Barbell Bent Over Row" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Barbell Bent Over Row</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Lats, Rhomboids, Biceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/lat-pulldown-resized.png" alt="Lat Pulldown" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Lat Pulldown</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Lats, Biceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-bent-over-row-resized.png" alt="Single Arm DB Row" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Single Arm DB Row</h3>
+            <span class="card-tag">Compound</span>
+            <p class="card-target">Lats, Rhomboids</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-one-arm-triceps-extension-resized.png" alt="Overhead Tricep Extension" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Overhead Tricep Ext</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Triceps</p>
+          </div>
+        </div>
+        <div class="exercise-card">
+          <div class="card-img-wrap">
+            <img src="https://weighttraining.guide/wp-content/uploads/2016/10/dumbbell-incline-curl-resized.png" alt="Incline Dumbbell Curl" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3>Incline Dumbbell Curl</h3>
+            <span class="card-tag">Isolation</span>
+            <p class="card-target">Biceps (long head)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEALS (Placeholder) -->
+    <section class="day-section" id="day-meals" data-color="orange">
+      <div class="day-header day-header-orange">
+        <div class="day-header-content">
+          <span class="day-badge">WEEKLY</span>
+          <h2>Meal Plan</h2>
+          <p class="day-subtitle">Fuel your gains with the right nutrition</p>
+        </div>
+        <div class="muscle-icon">&#127869;</div>
+      </div>
+      <div class="meals-placeholder">
+        <div class="placeholder-icon">&#127860;</div>
+        <h3>Meal Plan Coming Soon</h3>
+        <p>Your weekly diet breakdown with macros and meal timing will appear here.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>FitPlan &mdash; Train Hard, Eat Smart, Stay Consistent</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
