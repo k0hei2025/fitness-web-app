@@ -153,9 +153,12 @@
           { tag: "mt-home", label: "home", name: "Cucumber + tomato slices + chaat masala", note: "Adds freshness. Vitamin C helps iron from paneer.", p: 1, f: 0.2, c: 15 },
           { tag: "mt-supp", label: "supplement", name: "MyProtein peanut butter 1 tbsp (spread on bread)", note: "Spread on one slice instead of butter \u2014 adds protein + healthy fat", p: 4, f: 0.3, c: 10 },
           { tag: "mt-supp", label: "supplement", name: "MyProtein creatine 5g in water", note: "Take alongside sandwich. Every day \u2014 same time always.", p: 0, f: 0, c: 0 },
+          { tag: "mt-food", label: "food", name: "2 breads + 1 spoon peanut butter", note: "Extra energy \u2014 healthy fats + slow carbs for sustained fuel", p: 6, f: 0.5, c: 20 },
+          { tag: "mt-food", label: "food", name: "1 piece of fruit (banana/apple)", note: "Natural sugars + fibre \u2014 quick energy before/after workout", p: 1, f: 0.2, c: 10 },
+          { tag: "mt-food", label: "food", name: "Cinnamon powder (sprinkle)", note: "Anti-inflammatory + helps regulate blood sugar. Add on fruit or bread.", p: 0, f: 0.1, c: 10 },
         ],
         tip: "Toast the bread for 2 min \u2014 melts cheese, makes paneer slightly warm. Quick, high protein, zero effort. Can prepare in 5 minutes at home.",
-        totals: { p: 29, f: 1.8, c: 589, kcal: 350 },
+        totals: { p: 36, f: 2.6, c: 629, kcal: 450 },
         extra: "Paneer sandwich is your best home option \u2014 29g protein + 584mg calcium in one snack. No cooking skill needed. Just slice, fill, toast."
       } : {
         num: "03", badge: "Evening snack", bc: "#D85A30", bt: "#FAECE7",
@@ -164,9 +167,12 @@
           { tag: "mt-jp", label: "conbini", name: "Natto 1 pack \u2014 \u5c0f\u7c92 small grain (50g)", note: "Open pack, mix included sauce, eat at desk with spoon", p: 8, f: 1.7, c: 45 },
           { tag: "mt-supp", label: "supplement", name: "MyProtein choc brownie 1 scoop in milk 200ml", note: "Shaker bottle at desk. Buy Meiji milk carton \u00a580 at conbini.", p: 32, f: 0.1, c: 300 },
           { tag: "mt-supp", label: "supplement", name: "MyProtein creatine 5g in water", note: "Every day \u2014 same 5 PM time. Mix in water bottle at desk.", p: 0, f: 0, c: 0 },
+          { tag: "mt-food", label: "food", name: "2 breads + 1 spoon peanut butter", note: "Extra energy \u2014 healthy fats + slow carbs for sustained fuel", p: 6, f: 0.5, c: 20 },
+          { tag: "mt-food", label: "food", name: "1 piece of fruit (banana/apple)", note: "Natural sugars + fibre \u2014 quick energy before/after workout", p: 1, f: 0.2, c: 10 },
+          { tag: "mt-food", label: "food", name: "Cinnamon powder (sprinkle)", note: "Anti-inflammatory + helps regulate blood sugar. Add on fruit or bread.", p: 0, f: 0.1, c: 10 },
         ],
         tip: "Total ~\u00a5160. Shaker bottle stays permanently at office. Bring protein in zip-lock bag. Natto from conbini fridge section.",
-        totals: { p: 40, f: 1.8, c: 345, kcal: 330 },
+        totals: { p: 47, f: 2.6, c: 385, kcal: 430 },
         extra: null
       },
       {
